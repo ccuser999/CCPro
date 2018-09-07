@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+        android:id="@+id/web_content_layout"
+                  android:orientation="vertical">
+
+        <!--<include layout="@layout/py_title_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/px_80"-->
+            <!--android:visibility="gone"/>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            >
+
+            <include layout="@layout/s_base_web_view"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_toolbar"
+            android:gravity="center_vertical"
+            >
+
+           <Button
+               android:layout_width="30dp"
+               android:layout_height="match_parent"
+               android:background="@drawable/btn_web_pre_gray"
+               android:layout_marginLeft="@dimen/px_60"
+               android:id="@+id/web_pre"
+               />
+
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_web_next_gray"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/px_60"
+                android:id="@+id/web_next"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/video_fullView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</RelativeLayout>

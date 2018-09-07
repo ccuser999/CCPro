@@ -1,0 +1,108 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+
+    signingConfigs {
+
+        qiPaiSign {
+            keyAlias 'key0qipai'
+            keyPassword 'qipai9900'
+            storeFile file('../keystore/qipai.keystore')
+            storePassword 'qipai9900'
+        }
+
+    }
+
+    defaultConfig {
+        multiDexEnabled = true
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            //定义一个文件
+//            outputFileName = "${variant.name}-${variant.versionName}.apk"
+//            def outputFile = output.outputFile
+            //定义存储apk的位置和文件名，这里文件名格式定义为 [applicationId_版本号_ReleaseTime_apk]
+            if (outputFileName != null && outputFileName.contains("release") && outputFileName.endsWith('.apk')) {
+
+                outputFileName = "${variant.applicationId}_${variant.versionCode}_${variant.versionName}_${getReleaseTime()}_release.apk"
+
+            }else  if (outputFile != null && outputFile.name.contains("debug") && outputFile.name.endsWith('.apk')) {
+
+                outputFileName = "${variant.applicationId}_${variant.versionCode}_${variant.versionName}_${getReleaseTime()}_debug.apk"
+            }
+        }
+    }
+
+
+    buildTypes {
+
+        debug {
+            minifyEnabled true  // 是否混淆
+
+            zipAlignEnabled true // Zipalign优化
+            shrinkResources true  // 是否去除无效的资源文件
+
+            // 混淆的配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled true  // 是否混淆
+            zipAlignEnabled true // Zipalign优化
+            shrinkResources true  // 是否去除无效的资源文件
+
+            // 混淆的配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    productFlavors {
+
+        flavorDimensions "all"
+
+
+        new_web_game {
+
+            applicationId "com.sky.blue"
+            minSdkVersion 18
+            targetSdkVersion 22
+            versionCode 1
+            versionName "1.0"
+            multiDexEnabled = true
+
+            signingConfig signingConfigs.qiPaiSign
+
+            dimension "all"
+
+            resValue "string", "facebook_app_name", ""
+            resValue "string", "facebook_app_id", ""
+            resValue "string", "facebook_authorities", "com.newwns.webgame"
+            resValue "string", "google_game_app_id", ""
+
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //    implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation project(':star-core')
+}
+
+
+def getReleaseTime() {
+    return new Date().format("yyyy-MM-dd-HH-mm", TimeZone.getDefault())
+}
