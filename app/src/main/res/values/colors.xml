@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="ijk_color_blue_main">@color/ijk_color_blue_500</color>
+    <color name="ijk_color_blue_50">#E3F2FD</color>
+    <color name="ijk_color_blue_100">#BBDEFB</color>
+    <color name="ijk_color_blue_200">#90CAF9</color>
+    <color name="ijk_color_blue_300">#64B5F6</color>
+    <color name="ijk_color_blue_400">#42A5F5</color>
+    <color name="ijk_color_blue_500">#2196F3</color>
+    <color name="ijk_color_blue_600">#1E88E5</color>
+    <color name="ijk_color_blue_700">#1976D2</color>
+    <color name="ijk_color_blue_800">#1565C0</color>
+    <color name="ijk_color_blue_900">#0D47A1</color>
+
+    <color name="ijk_transparent_dark">#77000000</color>
+
+
+    <color name="e_50000000">#50000000</color><!-- 半透明色 -->
+    <color name="e_80ffffff">#80ffffff</color><!-- 半白透明色 -->
+    <color name="e_40ffffff">#40ffffff</color><!-- 1/4半白透明色 -->
+    <color name="e_8fffffff">#8fffffff</color><!-- 3/4半白透明色 -->
+    <color name="e_cfffffff">#cfffffff</color>
+    <color name="e_88ffffff">#88ffffff</color>
+    <color name="e_ffffffff">#ffffffff</color>
+    <color name="e_efffffff">#efffffff</color>
+    <color name="e_faf9f8">#faf9f8</color><!--  -->
+    <color name="e_383838">#383838</color><!-- 标题颜色 -->
+    <color name="e_7e90a9">#7e90a9</color><!-- 个人中心标题字体淡紫色 -->
+    <color name="e_00b7ee">#00b7ee</color><!-- 个人中心按钮点击效果天蓝色 -->
+    <color name="e_c1c1c1">#c1c1c1</color><!-- 个人中心按钮不可点效果灰色 -->
+    <color name="e_d9d9d9">#d9d9d9</color><!-- 标题分割条颜色 -->
+    <color name="e_18c6ff">#18c6ff</color><!-- 个人中心uid描述蓝色 -->
+    <color name="e_8c8c8c">#8c8c8c</color><!-- 个人中心uid值灰色 -->
+    <color name="e_ff5e5e">#ff5e5e</color><!-- 游客说明文案红色-->
+    <color name="e_484848">#484848</color><!-- 賬號等文案黑色-->
+    <color name="e_6b6b6b">#6b6b6b</color><!-- 个人中心输入框里面的文字-->
+    <color name="e_2eade4">#2eade4</color><!-- 个人中心按钮样式1天蓝色-->
+    <color name="e_939393">#939393</color><!-- 个人中心提示文字颜色-->
+    <color name="e_ff4848">#ff4848</color><!-- 確認綁定帳號背景-->
+    <color name="e_2cd7d1">#2cd7d1</color><!-- 签到按钮背景色淡青色-->
+    <color name="e_747474">#747474</color><!-- 签到描述文字颜色灰色-->
+    <color name="e_5c5c5c">#5c5c5c</color><!-- 绑定手机输入框中的颜色黑色-->
+    <color name="e_c5c4c5">#c5c4c5</color><!-- 绑定手机输入框中的提示语颜色灰色-->
+    <color name="e_ff686a">#ff686a</color><!-- 綁定手機中的禮包描述標題紅色-->
+    <color name="e_20aeff">#20aeff</color><!-- 已綁定手機中的序号显示蓝色-->
+    <color name="e_ff6262">#ff6262</color><!-- 已綁定手機中的礼包提醒红色-->
+    <color name="e_ff9368">#ff9368</color><!-- 礼包中心礼包内容的背景橙色 -->
+    <color name="e_00a0e9">#00a0e9</color><!-- 礼包中心領取按鈕藍色 -->
+    <color name="e_999999">#999999</color><!-- 礼包序號禮包類型文字顏色灰色 -->
+    <color name="e_17a5ff">#17a5ff</color><!-- 礼包序號序號文字顏色藍色 -->
+    <color name="e_edc353">#edc353</color><!-- 礼包序號複製按鈕背景顏色黃色 -->
+    <color name="e_adaeaf">#adaeaf</color><!-- 客服游戏名颜色浅黑色-->
+    <color name="e_7a7a7a">#7a7a7a</color><!-- 最新回覆列表文字颜色深灰色-->
+    <color name="e_9ed8f2">#9ed8f2</color><!-- 最新回覆列表日期颜色浅蓝色-->
+    <color name="e_dddddd">#dddddd</color><!-- 历史回覆竖线灰色-->
+    <color name="e_828282">#828282</color><!-- 历史回覆內容標題淺黑色-->
+    <color name="e_29292e">#29292e</color><!-- 对话框标题颜色，黑色-->
+    <color name="e_ff6600">#ff6600</color><!-- 对话框中的礼包标题橙色-->
+    <color name="e_58c2ef">#58c2ef</color><!-- 对话框中的礼包序号浅蓝色-->
+    <color name="e_bdbdbd">#bdbdbd</color><!-- 客服回覆內容中內容的字體顏色，灰色-->
+    <color name="e_floating_5aa9ff">#5aa9ff</color>
+    <color name="e_ff8e74">#ff8e74</color><!-- 客服聯繫方式背景，橙色 -->
+    <color name="e_a6a6a6">#a6a6a6</color><!-- 灰色 -->
+    <color name="e_e4eff6">#e4eff6</color>
+    <color name="e_ffffff">#ffffff</color>
+
+    <color name="e_000000">#a0000000</color>
+
+    
+</resources>

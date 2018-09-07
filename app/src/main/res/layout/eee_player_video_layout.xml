@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cc.wbsp.widget.EEEBaseRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/e_000000">
+
+
+    <!-- <WebView
+         android:id="@+id/eee_web_video_view_id"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"></WebView>
+ -->
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/eee_web_video_frame_layout_id"></FrameLayout>
+
+    <ProgressBar
+            android:id="@+id/webview_pager_loading_percent"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"/>
+
+    <include layout="@layout/efun_video_close"/>
+
+
+</com.cc.wbsp.widget.EEEBaseRelativeLayout>
