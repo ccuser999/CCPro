@@ -14,6 +14,7 @@ public class Logger {
     public static void i(String tag, String msg){
         if (LOG_ENABLE){
             Log.i(tag, msg);
+            
         }
     }
     public static void v(String tag, String msg){
